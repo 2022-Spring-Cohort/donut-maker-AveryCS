@@ -12,13 +12,12 @@ addToDonutCount(){
     this.donutCount++
 }
 
-
-
-
-
-
-
-
+retrieveDonutCount(){
+    this.donutCount
+}
+addToAutoClickerCount(){
+    this.autoClicker++
+}
 
 
 
