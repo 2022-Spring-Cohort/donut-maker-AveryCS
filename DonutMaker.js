@@ -18,9 +18,17 @@ addToDonutCount(){
 addToAutoClickerCount(){
     this.autoClicker++;
     this.donutCount-=this.autoClickerCost;
-    this.autoClickerCost *= 1.1;
+    this.autoClickerCost = Math.round(this.autoClickerCost * 1.1);
    
     }
+
+    // When the 'activate Auto Clickers' event is executed, 
+    // increase the donut total by the amount of Auto Clickers owned
+
+activateAutoClicker(){
+    this.donutCount += this.autoClicker;
+    console.log(this.autoClicker)
+}
 }
 
 
