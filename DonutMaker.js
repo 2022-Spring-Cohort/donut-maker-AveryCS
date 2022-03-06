@@ -7,6 +7,7 @@ this.donutCount = 0;
 this.donutMultiplier = 0;
 this.autoClicker = 0;
 this.autoClickerCost = 100;
+this.donutMultiplierCost =10;
 }
 
 addToDonutCount(){
@@ -28,6 +29,12 @@ addToAutoClickerCount(){
 activateAutoClicker(){
     this.donutCount += this.autoClicker;
     console.log(this.autoClicker)
+}
+
+addToDonutMultiplierCount(){
+    this.donutMultiplier++;
+    this.donutCount-=this.donutMultiplierCost
+    this.donutMultiplierCost = Math.round(this.donutMultiplierCost * 1.1);
 }
 }
 

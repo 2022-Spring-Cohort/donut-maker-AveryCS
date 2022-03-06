@@ -13,7 +13,7 @@ const addToAutoClickerCount = document.querySelector(".PurchaseAutoClicks");
 const autoClickerDisplay = document.querySelector(".AutoClickDisplay");
 
 const buyMultiplier = document.querySelector(".PurchaseDonutMultiplier");
-const multiplierDisplay = document.querySelector(".DonutMultiplier Display");
+const multiplierDisplay = document.querySelector(".DonutMultiplierDisplay");
 
 addToDonutCount.addEventListener("click", () => {
   donutMaker.addToDonutCount();
@@ -31,8 +31,17 @@ addToAutoClickerCount.addEventListener("click", () => {
   
 })
 
+buyMultiplier.addEventListener("click", () => { 
+  if(donutMaker.donutCount >= donutMaker.donutMultiplierCost){
+    donutMaker.addToDonutMultiplierCount();
+    multiplierDisplay.innerText = "Donut Multiplier: "+ donutMaker.donutMultiplier;
+  donutDisplayCount.innerText = "Donut Count: "+ donutMaker.donutCount;
+  }else console.log("You need more donuts to buy the multiplier");
+
+})
+  
+  // Math.round(donutMaker.donutCount);
+
 
 
 //1000 means nanosecond
-//Why do all of these }) have to be at the bottom? Why are they not at the end of each query selector?
-
