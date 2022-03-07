@@ -11,7 +11,7 @@ this.donutMultiplierCost =10;
 }
 
 addToDonutCount(){
-    this.donutCount++;
+    this.donutCount+= Math.pow(1.2, this.donutMultiplier);
 }
 
 
@@ -27,7 +27,10 @@ addToAutoClickerCount(){
     // increase the donut total by the amount of Auto Clickers owned
 
 activateAutoClicker(){
-    this.donutCount += this.autoClicker;
+    // for(let i =0; i < this.autoClicker; i++){
+    //     this.addToDonutCount();
+    // }
+    this.donutCount += this.autoClicker*Math.pow(1.2, this.donutMultiplier);;
     console.log(this.autoClicker)
 }
 
@@ -35,7 +38,6 @@ addToDonutMultiplierCount(){
     this.donutMultiplier++;
     this.donutCount-=this.donutMultiplierCost
     this.donutMultiplierCost = Math.round(this.donutMultiplierCost * 1.1);
+    
 }
 }
-
-
