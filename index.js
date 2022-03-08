@@ -38,21 +38,30 @@ buyMultiplier.addEventListener("click", () => {
   }else console.log("You need more donuts to buy the multiplier");
 
 })
-const modal = document.querySelector(".modal"); 
+const companyModal = document.querySelector(".companyModal"); 
 const companyButton = document.querySelector(".companyButton");
-const close = document.querySelector(".close");
-modal.style.display = "none";
+const companyClose = document.querySelector(".companyClose");
+companyModal.style.display = "none";
 
 companyButton.addEventListener("click", () => {
-  modal.style.display = "block";
+  companyModal.style.display = "block";
 })
 
-close.addEventListener("click", () => {
-  modal.style.display = "none";
-  
-  
+companyClose.addEventListener("click", () => {
+  companyModal.style.display = "none";
 })
-  
+const aboutMeModal = document.querySelector(".aboutMeModalContent"); 
+const aboutMe = document.querySelector(".aboutMe");
+const aboutMeClose = document.querySelector(".aboutMeClose");
+aboutMeModal.style.display = "none";
+
+aboutMe.addEventListener("click", () => {
+  aboutMeModal.style.display = "block";
+})
+
+aboutMeClose.addEventListener("click", () => {
+  aboutMeModal.style.display = "none";
+})
 
 
 
