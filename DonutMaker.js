@@ -28,13 +28,13 @@ activateAutoClicker(){
     // for(let i =0; i < this.autoClicker; i++){
     //     this.addToDonutCount();
     // }
-    this.donutCount += this.autoClicker*Math.pow(1.2, this.donutMultiplier);;
-    console.log(this.autoClicker)
+    this.donutCount += this.autoClicker*Math.pow(1.2, this.donutMultiplier);
+    console.log(this.autoClicker);
 }
 
 addToDonutMultiplierCount(){
     this.donutMultiplier++;
-    this.donutCount-=this.donutMultiplierCost
+    this.donutCount-=this.donutMultiplierCost;
     this.donutMultiplierCost = Math.round(this.donutMultiplierCost * 1.1);
     
 }

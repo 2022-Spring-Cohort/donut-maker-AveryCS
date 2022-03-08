@@ -38,8 +38,21 @@ buyMultiplier.addEventListener("click", () => {
   }else console.log("You need more donuts to buy the multiplier");
 
 })
+const modal = document.querySelector(".modal"); 
+const companyButton = document.querySelector(".companyButton");
+const close = document.querySelector(".close");
+modal.style.display = "none";
+
+companyButton.addEventListener("click", () => {
+  modal.style.display = "block";
+})
+
+close.addEventListener("click", () => {
+  modal.style.display = "none";
   
-  // Math.round(donutMaker.donutCount);
+  
+})
+  
 
 
 
