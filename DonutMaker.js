@@ -17,17 +17,15 @@ addToDonutCount(){
 
 
 addToAutoClickerCount(){
-    this.autoClicker+=this.donutMultiplier;
+    this.autoClicker++;
     this.donutCount-=this.autoClickerCost;
     this.autoClickerCost = Math.round(this.autoClickerCost * 1.1);
-   
+    this.autoClicker+=this.donutMultiplier;
     }
 
 
 activateAutoClicker(){
-    // for(let i =0; i < this.autoClicker; i++){
-    //     this.addToDonutCount();
-    // }
+    
     this.donutCount += this.autoClicker*Math.pow(1.2, this.donutMultiplier);
     console.log(this.autoClicker);
 }
