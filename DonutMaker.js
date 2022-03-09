@@ -52,10 +52,10 @@ checkMultiplier(){
 
 }
 restartGame(){
-    // document.querySelector(".restartGame").addEventListener('click', function(){
+  
         window.location.reload();
     
-    // })
+    
     }
 
 
