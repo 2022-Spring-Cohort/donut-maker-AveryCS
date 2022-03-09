@@ -38,4 +38,19 @@ addToDonutMultiplierCount(){
     this.donutMultiplierCost = Math.round(this.donutMultiplierCost * 1.1);
     
 }
+checkAutoClick(){
+    const autoBtnClick = document.querySelector(".PurchaseAutoClicks");
+    if(this.donutCount >= this.autoClickerCost){
+autoBtnClick.disabled = false;
+}else autoBtnClick.disabled = true;
+
+}
+
+checkMultiplier(){
+    const multBtnClick = document.querySelector(".PurchaseDonutMultiplier");
+    if(this.donutCount >= this.donutMultiplierCost){
+        multBtnClick.disabled = false;
+}else multBtnClick.disabled = true;
+
+}
 }

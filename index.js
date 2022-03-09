@@ -6,6 +6,11 @@ setInterval(function(){
   donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
 },1000);
 
+setInterval(function(){
+  donutMaker.checkAutoClick();
+  donutMaker.checkMultiplier();}, 500);
+
+
 const addToDonutCount = document.querySelector(".IncreaseDonutCountButton");
 const donutDisplayCount = document.querySelector(".DonutCountDisplay");
 
@@ -27,6 +32,7 @@ addToAutoClickerCount.addEventListener("click", () => {
   donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
   }
   else console.log("Not enough donuts");
+  
   
 })
 
