@@ -53,4 +53,12 @@ checkMultiplier(){
 }else multBtnClick.disabled = true;
 
 }
+restartGame(){
+    // document.querySelector(".restartGame").addEventListener('click', function(){
+        window.location.reload();
+    
+    // })
+    }
+
+
 }

@@ -24,6 +24,8 @@ const buyMultiplier = document.querySelector(".PurchaseDonutMultiplier");
 const multiplierDisplay = document.querySelector(".DonutMultiplierDisplay");
 const multiplierCostDisplay = document.querySelector(".MultiplierCostDisplay")
 
+const restartGame = document.querySelector(".RestartGame")
+
 addToDonutCount.addEventListener("click", () => {
   donutMaker.addToDonutCount();
   donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
@@ -73,6 +75,10 @@ aboutMeClose.addEventListener("click", () => {
   aboutMeModal.style.display = "none";
 })
 
+restartGame.addEventListener("click", ()=>{
+  donutMaker.restartGame();
+
+})
 
 
 //1000 means nanosecond
