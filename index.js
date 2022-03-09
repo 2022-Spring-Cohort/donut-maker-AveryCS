@@ -8,7 +8,7 @@ setInterval(function(){
   autoClickCostDisplay.innerText = "Auto Clicker Cost: "+ Math.round(donutMaker.autoClickerCost);
   multiplierDisplay.innerText = "Multiplier: "+ Math.round(donutMaker.donutMultiplier);
   multiplierCostDisplay.innerText = "Multiplier Cost: "+ Math.round(donutMaker.donutMultiplierCost);
-  valueofMultiplier.innerText = "Value of Multiplier: "+ Math.pow(1.2, donutMaker.donutMultiplier);
+  valueofMultiplier.innerText = "Donuts Earned Per Click: "+ Math.pow(1.2, donutMaker.donutMultiplier);
 },1000);
 
 setInterval(function(){
