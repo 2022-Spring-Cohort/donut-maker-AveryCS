@@ -4,6 +4,8 @@ console.log(donutMaker);
 setInterval(function(){
   donutMaker.activateAutoClicker();
   donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
+  autoClickCostDisplay.innerText = "Auto Clicker Cost: "+ Math.round(donutMaker.autoClickerCost);
+  multiplierCostDisplay.innerText = "Multiplier Cost: "+ Math.round(donutMaker.donutMultiplierCost)
 },1000);
 
 setInterval(function(){
@@ -16,9 +18,11 @@ const donutDisplayCount = document.querySelector(".DonutCountDisplay");
 
 const addToAutoClickerCount = document.querySelector(".PurchaseAutoClicks");
 const autoClickerDisplay = document.querySelector(".AutoClickDisplay");
+const autoClickCostDisplay = document.querySelector(".AutoClickCostDisplay")
 
 const buyMultiplier = document.querySelector(".PurchaseDonutMultiplier");
 const multiplierDisplay = document.querySelector(".DonutMultiplierDisplay");
+const multiplierCostDisplay = document.querySelector(".MultiplierCostDisplay")
 
 addToDonutCount.addEventListener("click", () => {
   donutMaker.addToDonutCount();
