@@ -1,0 +1,9 @@
+
+.aboutMeLink{
+    display: flex;
+    justify-content: center;  
+}
+.aboutMeModal{
+    display: flex;
+    justify-content: center;
+}
