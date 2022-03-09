@@ -1,7 +1,8 @@
 
 .aboutMeLink{
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
+    padding-bottom: 2em; 
 }
 .aboutMeModal{
     display: flex;
@@ -20,7 +21,25 @@
     justify-content: space-evenly;
 }
 
-/* .container{
+.AutoAndMultiplier{
     display: flex;  
     justify-content: center;
-} */
+    justify-content: space-around;
+}
+.DonutCountButtonAndCount{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 25em 1em 25em; 
+}
+.DonutCountDisplay{
+    display: flex;  
+    justify-content: center;
+    padding-bottom: 2em;
+}
+.GameRestart{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 25em 1em 25em; 
+}

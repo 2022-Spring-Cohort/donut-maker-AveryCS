@@ -4,11 +4,12 @@ console.log(donutMaker);
 setInterval(function(){
   donutMaker.activateAutoClicker();
   autoClickerDisplay.innerText = "Auto Click Count: "+ Math.round(donutMaker.autoClicker);
-  donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
+  donutDisplayCount.innerText = "Sunflower Count: "+ Math.round(donutMaker.donutCount);
   autoClickCostDisplay.innerText = "Auto Clicker Cost: "+ Math.round(donutMaker.autoClickerCost);
   multiplierDisplay.innerText = "Multiplier: "+ Math.round(donutMaker.donutMultiplier);
   multiplierCostDisplay.innerText = "Multiplier Cost: "+ Math.round(donutMaker.donutMultiplierCost);
-  valueofMultiplier.innerText = "Donuts Earned Per Click: "+ Math.pow(1.2, donutMaker.donutMultiplier);
+  valueofMultiplier.innerText = "Donuts Earned Per Click: "+ Math.pow(1.2, donutMaker.donutMultiplier)
+  // ).toFixed(2);
 },1000);
 
 setInterval(function(){
