@@ -7,3 +7,20 @@
     display: flex;
     justify-content: center;
 }
+
+.topButtons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.portfolioGithubLink{
+    display: flex; 
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/* .container{
+    display: flex;  
+    justify-content: center;
+} */

@@ -8,6 +8,7 @@ setInterval(function(){
   autoClickCostDisplay.innerText = "Auto Clicker Cost: "+ Math.round(donutMaker.autoClickerCost);
   multiplierDisplay.innerText = "Multiplier: "+ Math.round(donutMaker.donutMultiplier);
   multiplierCostDisplay.innerText = "Multiplier Cost: "+ Math.round(donutMaker.donutMultiplierCost);
+  valueofMultiplier.innerText = "Value of Multiplier: "+ Math.pow(1.2, donutMaker.donutMultiplier);
 },1000);
 
 setInterval(function(){
@@ -24,7 +25,8 @@ const autoClickCostDisplay = document.querySelector(".AutoClickCostDisplay")
 
 const buyMultiplier = document.querySelector(".PurchaseDonutMultiplier");
 const multiplierDisplay = document.querySelector(".DonutMultiplierDisplay");
-const multiplierCostDisplay = document.querySelector(".MultiplierCostDisplay")
+const multiplierCostDisplay = document.querySelector(".MultiplierCostDisplay");
+const valueofMultiplier = document.querySelector(".ValueOfEachMultiplier");
 
 const restartGame = document.querySelector(".RestartGame")
 
