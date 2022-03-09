@@ -51,11 +51,11 @@ companyClose.addEventListener("click", () => {
   companyModal.style.display = "none";
 })
 const aboutMeModal = document.querySelector(".aboutMeModalContent"); 
-const aboutMe = document.querySelector(".aboutMe");
+const aboutMeLink = document.querySelector(".aboutMeLink");
 const aboutMeClose = document.querySelector(".aboutMeClose");
 aboutMeModal.style.display = "none";
 
-aboutMe.addEventListener("click", () => {
+aboutMeLink.addEventListener("click", () => {
   aboutMeModal.style.display = "block";
 })
 
