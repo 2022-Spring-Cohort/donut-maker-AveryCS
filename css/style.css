@@ -1,6 +1,12 @@
 body{
-  background-image: url(../images/sunflowerfield.jpeg);
+  background: url(../images/sunflowerfield.jpeg); no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+
 .aboutMeLink{
     display: flex;
     justify-content: center; 
@@ -17,8 +23,8 @@ body{
     justify-content: center;
     justify-content: space-evenly;
     list-style-type: none;
-    background-color: #0078d0;
-    color: #ffffff;
+    background-color: #edc833da;
+    color: #00a6bf;
     height: 2em;
     font-size: x-large;
 }
@@ -53,7 +59,27 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
+
 }
+
+.innerbackground{
+  background-color: #ffffff;
+  margin-left: 20em;
+  margin-right: 20em;
+  margin-top: 5em;
+  height: 100%;
+  padding-top: 3em;
+  padding-bottom: 10em;
+    border-radius: 25px;
+    border: 5px solid #0a7224;
+    padding: 20px;
+    
+    
+
+}
+
+
 
 
 .DonutCountDisplay{
@@ -71,7 +97,8 @@ body{
 
 /* CSS */
 .RestartGame {
-  background-color: #0078d0;
+  background-color:#00a6bf;
+   /* #0078d0; */
   border: 0;
   border-radius: 56px;
   color: #fff;
@@ -89,6 +116,7 @@ body{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 .RestartGame:before {
