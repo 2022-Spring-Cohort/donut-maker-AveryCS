@@ -1,4 +1,6 @@
-
+body{
+  background-image: url(../images/sunflowerfield.jpeg);
+}
 .aboutMeLink{
     display: flex;
     justify-content: center; 

@@ -9,11 +9,11 @@ setInterval(function(){
   multiplierDisplay.innerText = "Multiplier: "+ Math.round(donutMaker.donutMultiplier);
   multiplierCostDisplay.innerText = "Multiplier Cost: "+ Math.round(donutMaker.donutMultiplierCost);
   valueofMultiplier.innerText = "Donuts Earned Per Click: "+ Math.pow(1.2, donutMaker.donutMultiplier).toFixed(2);
-},50);
+},150);
 
 setInterval(function(){
   donutMaker.checkAutoClick();
-  donutMaker.checkMultiplier();}, 50);
+  donutMaker.checkMultiplier();}, 150);
 
 
 const addToDonutCount = document.querySelector(".IncreaseDonutCountButton");
