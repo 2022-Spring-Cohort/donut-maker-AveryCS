@@ -66,13 +66,14 @@ companyButton.addEventListener("click", () => {
 companyClose.addEventListener("click", () => {
   companyModal.style.display = "none";
 })
-const aboutMeModal = document.querySelector(".aboutMeModalContent"); 
+const aboutMeModal = document.querySelector(".aboutMeModal"); 
 const aboutMeLink = document.querySelector(".aboutMeLink");
 const aboutMeClose = document.querySelector(".aboutMeClose");
 aboutMeModal.style.display = "none";
 
 aboutMeLink.addEventListener("click", () => {
   aboutMeModal.style.display = "block";
+  console.log("click")
 })
 
 aboutMeClose.addEventListener("click", () => {
