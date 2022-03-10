@@ -41,6 +41,8 @@ checkAutoClick(){
     if(this.donutCount >= this.autoClickerCost){
 autoBtnClick.disabled = false;
 }else autoBtnClick.disabled = true;
+console.log("This is the donut count" + this.donutCount);
+
 
 }
 

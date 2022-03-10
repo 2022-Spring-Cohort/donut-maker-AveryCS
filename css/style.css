@@ -10,12 +10,15 @@
 }
 
 .topButtons{
+    padding-top: .5em;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     list-style-type: none;
     background-color: #0078d0;
-    color: #ffffff
+    color: #ffffff;
+    height: 2em;
+    font-size: x-large;
 }
 
 .portfolioGithubLink{
@@ -34,7 +37,14 @@
     flex-direction: column;
     justify-content: center;
     padding: 1em 25em 1em 25em; 
+    max-width: 20em;
 }
+.IncreaseDonutCountButton{
+    display: flex;  
+    justify-content: center;
+}
+
+
 .DonutCountDisplay{
     display: flex;  
     justify-content: center;

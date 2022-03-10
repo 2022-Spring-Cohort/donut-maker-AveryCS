@@ -4,17 +4,16 @@ console.log(donutMaker);
 setInterval(function(){
   donutMaker.activateAutoClicker();
   autoClickerDisplay.innerText = "Auto Click Count: "+ Math.round(donutMaker.autoClicker);
-  donutDisplayCount.innerText = "Sunflower Count: "+ Math.round(donutMaker.donutCount);
+  donutDisplayCount.innerText = "Sunflower Count: "+ Math.floor(donutMaker.donutCount);
   autoClickCostDisplay.innerText = "Auto Clicker Cost: "+ Math.round(donutMaker.autoClickerCost);
   multiplierDisplay.innerText = "Multiplier: "+ Math.round(donutMaker.donutMultiplier);
   multiplierCostDisplay.innerText = "Multiplier Cost: "+ Math.round(donutMaker.donutMultiplierCost);
-  valueofMultiplier.innerText = "Donuts Earned Per Click: "+ Math.pow(1.2, donutMaker.donutMultiplier)
-  // ).toFixed(2);
-},1000);
+  valueofMultiplier.innerText = "Donuts Earned Per Click: "+ Math.pow(1.2, donutMaker.donutMultiplier).toFixed(2);
+},50);
 
 setInterval(function(){
   donutMaker.checkAutoClick();
-  donutMaker.checkMultiplier();}, 500);
+  donutMaker.checkMultiplier();}, 50);
 
 
 const addToDonutCount = document.querySelector(".IncreaseDonutCountButton");
@@ -33,14 +32,14 @@ const restartGame = document.querySelector(".RestartGame")
 
 addToDonutCount.addEventListener("click", () => {
   donutMaker.addToDonutCount();
-  donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
+  // donutDisplayCount.innerText = "Sunflower Count: "+ Math.round(donutMaker.donutCount);
 })
 
 addToAutoClickerCount.addEventListener("click", () => {
   if(donutMaker.donutCount >= donutMaker.autoClickerCost){
     donutMaker.addToAutoClickerCount();
     autoClickerDisplay.innerText = "Auto Clicker Count: "+ donutMaker.autoClicker;
-  donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
+  // donutDisplayCount.innerText = "Sunflower Count: "+ Math.round(donutMaker.donutCount);
   }
   else console.log("Not enough donuts");
   
@@ -51,7 +50,7 @@ buyMultiplier.addEventListener("click", () => {
   if(donutMaker.donutCount >= donutMaker.donutMultiplierCost){
     donutMaker.addToDonutMultiplierCount();
     multiplierDisplay.innerText = "Donut Multiplier: "+ donutMaker.donutMultiplier;
-  donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
+  // donutDisplayCount.innerText = "Donut Count: "+ Math.round(donutMaker.donutCount);
   }else console.log("You need more donuts to buy the multiplier");
 
 })
