@@ -103,4 +103,7 @@
   .RestartGame{
     padding: 16px 48px;
   }
+  .companyModal{
+    background-color: rgb(7, 43, 75);
+  }
 }
