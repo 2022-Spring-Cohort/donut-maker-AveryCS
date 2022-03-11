@@ -49,10 +49,11 @@ body{
 
 .aboutMeClose{
   color: #aaa;
-  float: right;
+  float: left;
   font-size: 28px;
   font-weight: bold;
 }
+
 
 .aboutMeClose:hover,
   .aboutMeClose:focus{
@@ -62,10 +63,11 @@ body{
   }
 
 .topButtons{
+    padding: 0;
     padding-top: 1em;
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+
     list-style-type: none;
     background-color: #edc833da;
     color: #00a6bf;
