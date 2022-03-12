@@ -29,9 +29,11 @@ const multiplierCostDisplay = document.querySelector(".MultiplierCostDisplay");
 const valueofMultiplier = document.querySelector(".ValueOfEachMultiplier");
 
 const restartGame = document.querySelector(".RestartGame")
-
+var audio = new Audio("http://static1.grsites.com/archive/sounds/cars/cars016.mp3");
 addToDonutCount.addEventListener("click", () => {
   donutMaker.addToDonutCount();
+ 
+  audio.play();
   // donutDisplayCount.innerText = "Sunflower Count: "+ Math.round(donutMaker.donutCount);
 })
 
