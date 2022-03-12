@@ -4,6 +4,8 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat839.cur), auto !important;
+
 }
 
 
@@ -47,20 +49,7 @@ body{
   
 }
 
-.aboutMeClose{
-  color: #aaa;
-  float: left;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-
-.aboutMeClose:hover,
-  .aboutMeClose:focus{
-    color: black;
-  text-decoration: none;
-  cursor: pointer;
-  }
 
 .topButtons{
     padding: 0;
@@ -127,6 +116,10 @@ body{
   transform: scale(1.1);
 }
 
+/* .IncreaseDonutCountButton:hover{
+  transform: scale(1.1);
+} */
+
 .container{
   display: flex;  
     justify-content: center;
@@ -135,6 +128,23 @@ body{
     
 
 }
+
+.aboutMeClose{
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 240px;
+}
+
+
+.aboutMeClose:hover,
+  .aboutMeClose:focus{
+    color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }
 
 .innerbackground{
   background-color: #ffffff;
